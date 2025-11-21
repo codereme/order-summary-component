@@ -142,7 +142,7 @@
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .link-change-plan,
+  .plan-link,
   .pay-btn,
   .cancel-btn {
     transition-duration: 0.01ms;
