@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="description" content="Solution to Order summary component challenge from Frontend Mentor">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+  <main>
+    <div class="container">
+      <article class="card">
+        <img class="card-img" src="./images/illustration-hero.svg"
+          alt="Person happily listening to music through headphones with colorful background">
+        <div class="card-content">
+          <h1 class="card-title">Order Summary</h1>
+          <p class="card-description">You can now listen to millions of songs, audiobooks, and podcasts on any
+            device anywhere you like!</p>
 
-  Order Summary
+          <div class="plan-container" aria-labelledby="plan-name">
+            <img src="./images/icon-music.svg" alt="" aria-hidden="true">
+            <div class="plan-details">
+              <h2 class="plan-name" id="plan-name">Annual Plan</h2>
+              <p class="plan-price">$59.99/year</p>
+            </div>
+            <a class="plan-link" href="#" aria-label="Change subscription plan">Change</a>
+          </div>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+          <button class="btn pay-btn" href="#" aria-label="Proceed to payment for annual plan subscription">Proceed to
+            Payment</button>
+          <button class="btn cancel-btn" aria-label="Cancel order and return to previous page">Cancel Order</button>
+        </div>
+      </article>
+    </div>
 
-  Annual Plan
-  $59.99/year
+  </main>
 
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>
